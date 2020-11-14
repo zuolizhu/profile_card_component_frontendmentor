@@ -48,7 +48,10 @@ p {
   padding: 14.7rem 2.4rem 14.6rem 2.5rem;
   background-color: var(--color-dark-cyan);
   background-image: url(${BgTop}), url(${BgBottom});
-  background-position: -28.57rem -50.79rem, 69.2rem 37.6rem;
+  background-position: -76rem -48rem, 15rem 27rem;
+  @media (min-width: 768px) {
+    background-position: -28.57rem -50.79rem, 69.2rem 37.6rem;
+  }
   
   @media (min-width: 480px) {
     padding: 17.3rem 0 17.3rem;
