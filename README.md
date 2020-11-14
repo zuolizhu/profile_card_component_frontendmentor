@@ -1,4 +1,4 @@
-# New Project
+# Frontend Mentor - Profile card component
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
