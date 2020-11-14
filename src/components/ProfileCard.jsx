@@ -10,6 +10,7 @@ const Card = styled.div`
   position: relative;
   text-align: center;
   border-radius: 1.5rem;
+  margin: 0 auto;
   background-color: var(--color-white);
   box-shadow: 0 5rem 10rem -2rem rgba(8,70,94,0.50);
 
@@ -64,6 +65,10 @@ const Card = styled.div`
     padding-left: 4.1rem;
     padding-right: 5.2rem;
     justify-content: space-between;
+    @media (min-width: 480px) {
+      padding-left: 4.7rem;
+      padding-right: 5.4rem;
+    }
 
     h3 {
       font-size: 1.8rem;

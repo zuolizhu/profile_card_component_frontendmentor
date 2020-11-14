@@ -42,7 +42,11 @@ p {
 }
 
 .App {
+  padding: 14.7rem 2.4rem 14.6rem 2.5rem;
   background-color: var(--color-dark-cyan);
+  @media (min-width: 480px) {
+    padding: 17.3rem 0 17.3rem;
+  }
 }
 `;
 
