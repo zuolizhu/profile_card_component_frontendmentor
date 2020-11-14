@@ -30,7 +30,10 @@ const Card = styled.div`
     align-items: center;
     margin-bottom: .8rem;
     justify-content: center;
-    
+    @media (min-width: 480px) {
+      margin-top: 1.7rem;
+    }
+
     &__name {
       font-size: 1.8rem;
       line-height: 2.3rem;
@@ -49,7 +52,7 @@ const Card = styled.div`
   .location {
     font-size: 1.4rem;
     line-height: 1.8rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.23rem;
     color: var(--color-gray-blue);
   }
 
@@ -61,13 +64,24 @@ const Card = styled.div`
 
   .social-info {
     display: flex;
-    margin-top: 2.4rem;
+    margin-top: 2.45rem;
     padding-left: 4.1rem;
     padding-right: 5.2rem;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+
     @media (min-width: 480px) {
       padding-left: 4.7rem;
       padding-right: 5.4rem;
+    }
+
+    &__likes {
+      margin-left: 3.85rem;
+      margin-right: 4.65rem;
+      @media (min-width: 480px) {
+        margin-left: 4.85rem;
+        margin-right: 5.65rem;
+      }
     }
 
     h3 {
@@ -101,6 +115,10 @@ const Avatar = styled.div`
     height: 9.6rem;
     border-radius: 50%;
     border: .5rem solid var(--color-white);
+    @media (min-width: 480px) {
+      width: 10.6rem;
+      height: 10.6rem;
+    }
   }
 `;
 
@@ -117,17 +135,17 @@ export default function ProfileCard({ userInfo }) {
       <p className="location">{ userInfo.location }</p>
       <div className="divider"></div>
       <div className="social-info">
-        <div className="socials-info__followers">
+        <div className="social-info__followers">
           <h3>{ userInfo.followers }</h3>
-          <p>followers</p>
+          <p>Followers</p>
         </div>
-        <div className="socials-info__likes">
+        <div className="social-info__likes">
           <h3>{ userInfo.likes }</h3>
-          <p>likes</p>
+          <p>Likes</p>
         </div>
-        <div className="socials-info__photos">
+        <div className="social-info__photos">
           <h3>{ userInfo.photos }</h3>
-          <p>photos</p>
+          <p>Photos</p>
         </div>
       </div>
     </Card>

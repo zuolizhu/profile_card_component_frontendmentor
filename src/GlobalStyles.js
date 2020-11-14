@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import BgTop from './images/bg-pattern-top.svg';
+import BgBottom from './images/bg-pattern-bottom.svg';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -42,8 +44,12 @@ p {
 }
 
 .App {
+  background-repeat: no-repeat;
   padding: 14.7rem 2.4rem 14.6rem 2.5rem;
   background-color: var(--color-dark-cyan);
+  background-image: url(${BgTop}), url(${BgBottom});
+  background-position: -28.57rem -50.79rem, 69.2rem 37.6rem;
+  
   @media (min-width: 480px) {
     padding: 17.3rem 0 17.3rem;
   }
